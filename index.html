@@ -176,6 +176,109 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linearRegression-1" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/12/linearRegression-1/">【机器学习笔记】：大话线性回归（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/12/linearRegression-1/" class="archive-article-date">
+  	<time datetime="2018-11-12T07:56:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>线性回归作为监督学习中经典的回归模型之一，是初学者入门非常好的开始。宏观上考虑理解性的概念，我想我们在初中可能就接触过，y=ax，x为自变量，y为因变量，a为系数也是斜率。如果我们知道了a系数，那么给我一个x，我就能得到一个y，由此可以很好地为未知的x值预测相应的y值。这很符合我们正常逻辑，不难理解。那统计学中的线性回归是如何解释的呢？</p>
+<p>对于统计模型线性回归，我想从以下六个方面来展开，并分两篇文章进行详细解读：</p>
+<ul>
+<li><p>线性回归模型定义</p>
+</li>
+<li><p>线性回归的损失函数</p>
+</li>
+<li><p>线性回归参数估计</p>
+</li>
+<li><p>线性回归预测</p>
+</li>
+<li><p>线性回归拟合优度</p>
+</li>
+<li><p>线性回归假设检验</p>
+</li>
+<li><p>线性回归诊断</p>
+</li>
+</ul>
+<p>##　线性回归模型定义</p>
+<p>线性回归按变量数量的多少可以分为：一元线性回归（简单线性回归）和多元线性回归。</p>
+<p>一元线性回归，也就是有一个自变量，其模型可以表示如下：</p>
+<p><img src="/2018/11/12/linearRegression-1/1.png" alt=""></p>
+<p>公式中参数解释如下：</p>
+<p>x：自变量</p>
+<p>y：因变量</p>
+<p>β 0：截距</p>
+<p>β 1：变量回归系数</p>
+<p>ϵ：误差项的随机变量1</p>
+<p>这些参数中，<strong>（β 0+β 1x）</strong>反映了由于x的变化而引起的y的线性变化；<strong>ϵ</strong>反映了除了x和y之间的线性关系之外的随机因素对y的影响，是不能由x和y之间的线性关系所解释的变异性。可以这么来理解ϵ：<strong>我们对y的预测是不可能达到与真实值完全一样的，这个真实值只有上帝知道，因此必然会产生误差，我们就用ϵ来表示这个无法预测的误差。</strong></p>
+<p>同样的，多元线性回归模型的表示如下：</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">多元线性回归</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/12/linearRegression-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-a" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -472,6 +575,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ROC, AUC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
               </li>
             
             <div class="clearfix"></div>
