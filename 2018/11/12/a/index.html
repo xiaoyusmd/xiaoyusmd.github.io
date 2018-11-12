@@ -29,7 +29,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/11/12/a/expertise.gif">
 <meta property="og:image" content="http://yoursite.com/2018/11/12/a/fig5.gif">
 <meta property="og:image" content="http://yoursite.com/2018/11/12/a/12.png">
-<meta property="og:updated_time" content="2018-11-12T07:01:46.713Z">
+<meta property="og:updated_time" content="2018-11-12T08:09:33.695Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【机器学习笔记】：一文让你彻底记住什么是ROC&#x2F;AUC">
 <meta name="twitter:description" content="ROC/AUC作为机器学习的评估指标非常重要，也是面试中经常出现的问题（80%都会问到）。其实，理解它并不是非常难，但是好多朋友都遇到了一个相同的问题，那就是：每次看书的时候都很明白，但回过头就忘了，经常容易将概念弄混。还有的朋友面试之前背下来了，但是一紧张大脑一片空白全忘了，导致回答的很差。 我在之前的面试过程中也遇到过类似的问题，我的面试经验是：一般笔试题遇到选择题基本都会考这个率，那个率，或">
@@ -211,6 +211,7 @@ var _hmt = _hmt || [];
       
         <p>ROC/AUC作为机器学习的评估指标非常重要，也是面试中经常出现的问题（80%都会问到）。其实，理解它并不是非常难，但是好多朋友都遇到了一个相同的问题，那就是：<strong>每次看书的时候都很明白，但回过头就忘了，经常容易将概念弄混。</strong>还有的朋友面试之前背下来了，但是一紧张大脑一片空白全忘了，导致回答的很差。</p>
 <p>我在之前的面试过程中也遇到过类似的问题，我的面试经验是：一般笔试题遇到选择题基本都会考这个率，那个率，或者给一个场景让你选用哪个。面试过程中也被问过很多次，比如什么是AUC/ROC？横轴纵轴都代表什么？有什么优点？为什么要使用它？</p>
+<a id="more"></a>
 <p>我记得在我第一次回答的时候，我将准确率，精准率，召回率等概念混淆了，最后一团乱。回去以后我从头到尾梳理了一遍所有相关概念，后面的面试基本都回答地很好。现在想将自己的一些理解分享给大家，希望读完本篇可以彻底记住ROC/AUC的概念。</p>
 <h2 id="1-什么是性能度量？"><a href="#1-什么是性能度量？" class="headerlink" title="1. 什么是性能度量？"></a>1. 什么是性能度量？</h2><p>我们都知道机器学习要建模，但是对于模型性能的好坏（即模型的泛化能力），我们并不知道是怎样的，很可能这个模型就是一个差的模型，泛化能力弱，对测试集不能很好的预测或分类。那么如何知道这个模型是好是坏呢？我们必须有个评判的标准。<strong>为了了解模型的泛化能力，我们需要用某个指标来衡量，这就是性能度量的意义。</strong>有了一个指标，我们就可以对比不同模型了，从而知道哪个模型相对好，那个模型相对差，并通过这个指标来进一步调参逐步优化我们的模型。</p>
 <p>当然，对于分类和回归两类监督学习，分别有各自的评判标准。本篇我们主要讨论与分类相关的一些指标，因为AUC/ROC就是用于分类的性能度量标准。</p>
@@ -304,7 +305,7 @@ var _hmt = _hmt || [];
 <li>机器学习，周志华</li>
 <li>Python数据科学技术详解与商业实践，常国珍</li>
 <li><a href="https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc" target="_blank" rel="noopener">https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc</a></li>
-<li><a href="https://lukeoakdenrayner.wordpress.com/2018/01/07/the-philosophical-argument-for-using-roc-curves/" target="_blank" rel="noopener">https://lukeoakdenrayner.wordpress.com/2018/01/07/the-philosophical-argument-for-using-roc-curves/</a><a id="more"></a></li>
+<li><a href="https://lukeoakdenrayner.wordpress.com/2018/01/07/the-philosophical-argument-for-using-roc-curves/" target="_blank" rel="noopener">https://lukeoakdenrayner.wordpress.com/2018/01/07/the-philosophical-argument-for-using-roc-curves/</a></li>
 </ol>
 </blockquote>
 
@@ -581,6 +582,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">监督分类性模型性能度量</a>
               </li>
              
@@ -590,10 +595,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ROC, AUC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">多元线性回归</a>
               </li>
             
             <div class="clearfix"></div>
